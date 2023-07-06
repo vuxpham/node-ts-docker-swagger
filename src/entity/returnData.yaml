@@ -1,0 +1,27 @@
+components:
+  schemas:
+    ReturnData:
+      type: object
+      required:
+        - data
+        - code
+        - message
+        - status
+      properties:
+        data:
+          type: object
+          description: The return data
+        code:
+          type: number
+          description: The code of response
+        message:
+          type: string
+          description: The message of response
+        status:
+          type: boolean
+          description: The status of response
+      example:
+        data: { message: "Hello user" }
+        code: 200
+        message: "Hello"
+        status: true
